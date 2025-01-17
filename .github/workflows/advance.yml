@@ -12,10 +12,10 @@ jobs:
            run: echo Hello World! This is the first job
          - uses: actions/checkout@v4
          - name: Print to Log
-             id: print-to-log
-             uses: actions/hello-world-javascript-action@main
-             with:
-               who-to-greet: ${{ github.actor }} 
+           id: print-to-log
+           uses: actions/hello-world-javascript-action@main
+           with:
+             who-to-greet: ${{ github.actor }} 
 
   secondjob:
     runs-on: ubuntu-latest
